@@ -27,7 +27,7 @@ function Galleries({ data }) {
   ];
 
   return (
-    <section sx={{ variant: "section" }} className="galleries">
+    <section sx={{ variant: "section", marginTop: '10rem' }} className="galleries">
       <div sx={{ variant: "header2" }}>
         <div className="galleries__title">
           <h2

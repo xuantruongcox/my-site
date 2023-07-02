@@ -9,6 +9,7 @@ import Story from "./components/story/story";
 import Culture from "./components/culture/culture";
 import Team from "./components/team/team";
 import Analysis from "./components/analysis/analysis";
+import Testimonials from './components/testimonials/testimonials-slider';
 import { Suspense } from "react";
 import caption from "./components/caption/dum-data";
 import categories from "./components/categories/dum-data";
@@ -30,7 +31,7 @@ function App() {
         <Culture data={culture} />
         <Team data={team} />
         <Analysis />
-        {/* <Testimonials /> */}
+        <Testimonials />
       </Layout>
     </Suspense>
   );

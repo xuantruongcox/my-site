@@ -12,18 +12,16 @@ function Culture({ data }) {
     >
       {/* <div className="culture__background"></div> */}
       <div sx={{ variant: "banner" }}>
-        <Container className="culture__container">
-          <h3 className="culture__subtitle">{subTitle}</h3>
-          <h2 className="culture__maintitle">{title}</h2>
-          <p className="culture__des">{description}</p>
-          <img
-            sx={{ variant: "divider" }}
-            className="culture__divider"
-            src={blackDivider}
-            alt=""
-          />
-          <p className="culture__content">{content}</p>
-        </Container>
+        <h3 className="culture__subtitle">{subTitle}</h3>
+        <h2 className="culture__maintitle">{title}</h2>
+        <p className="culture__des">{description}</p>
+        <img
+          sx={{ variant: "divider" }}
+          className="culture__divider"
+          src={blackDivider}
+          alt=""
+        />
+        <p className="culture__content">{content}</p>
       </div>
     </section>
   );

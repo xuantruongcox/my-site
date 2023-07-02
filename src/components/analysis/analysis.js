@@ -28,36 +28,43 @@ const data = [
   },
 ];
 
-
 function Analysis() {
   const [ref, inView] = useInView({
-    triggerOnce: false, 
-    threshold: 0.1, 
+    triggerOnce: false,
+    threshold: 0.1,
   });
   return (
-    <section sx={{variant: 'section', padding: '10rem 0rem', backgroundColor: 'black'}} ref={ref} className="analysis">
-      <Container className="analysis__wrapper">
-        <ul sx={{variant: 'grid.col4'}} className="analysis__list">
-          {data.map((item, index) => {
-            return (
-              <li key={index} className="analysis__list-item">
-                <div className="item__wrapper">
-                  <h2 sx={{fontSize: '5rem'}} className={item.icon}></h2>
-                  <h3 sx={{fontWeight: 'bold'}} className="item__quantity ">
-                    {inView && (
-                      <CountUp
-                        className="animate__animated animate__fadeIn"
-                        end={item.quantity}
-                      />
-                    )}
-                  </h3>
-                  <p sx={{fontSize: '1.4rem'}} className="item__name">{toUpperCase(item.name)}</p>
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      </Container>
+    <section
+      sx={{
+        variant: "section",
+        padding: "10rem 0rem",
+        backgroundColor: "black",
+      }}
+      ref={ref}
+      className="analysis"
+    >
+      <ul sx={{ variant: "grid.col4" }} className="analysis__list">
+        {data.map((item, index) => {
+          return (
+            <li key={index} className="analysis__list-item">
+              <div className="item__wrapper">
+                <h2 sx={{ fontSize: "5rem" }} className={item.icon}></h2>
+                <h3 sx={{ fontWeight: "bold" }} className="item__quantity ">
+                  {inView && (
+                    <CountUp
+                      className="animate__animated animate__fadeIn"
+                      end={item.quantity}
+                    />
+                  )}
+                </h3>
+                <p sx={{ fontSize: 3 }} className="item__name">
+                  {toUpperCase(item.name)}
+                </p>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
     </section>
   );
 }
