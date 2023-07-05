@@ -1,0 +1,17 @@
+.search__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
+  clear: both;
+  background-color: white;
+  z-index: 9999;
+}
+
+.search__input {
+  width: 100vw;
+  height: 100%;
+  font-size: 2rem;
+  text-align: center;
+}

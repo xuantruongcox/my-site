@@ -11,8 +11,7 @@ function Culture({ data }) {
       className="culture"
     >
       {/* <div className="culture__background"></div> */}
-      <div sx={{ variant: "banner" }}>
-        <Container className="culture__container">
+        <div sx={{ variant: "banner" }}>
           <h3 className="culture__subtitle">{subTitle}</h3>
           <h2 className="culture__maintitle">{title}</h2>
           <p className="culture__des">{description}</p>
@@ -23,8 +22,7 @@ function Culture({ data }) {
             alt=""
           />
           <p className="culture__content">{content}</p>
-        </Container>
-      </div>
+        </div>
     </section>
   );
 }

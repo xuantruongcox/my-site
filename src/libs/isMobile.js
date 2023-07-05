@@ -5,8 +5,8 @@ function useCheckDevice() {
 
   useEffect(() => {
     const handleCheck = () => {
-        const userAgent = navigator.userAgent;
-
+      const userAgent = navigator.userAgent;
+      console.log(userAgent)
       setIsMobile(
         /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
           userAgent

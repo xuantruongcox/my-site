@@ -27,7 +27,7 @@ function Galleries({ data }) {
   ];
 
   return (
-    <section sx={{ variant: "section" }} className="galleries">
+    <section sx={{ variant: "section", marginTop: '10rem' }} className="galleries">
       <div sx={{ variant: "header2" }}>
         <div className="galleries__title">
           <h2
@@ -55,7 +55,6 @@ function Galleries({ data }) {
       </div>
       <div sx={{ variant: "grid" }} className="galleries__galleries-list">
         {data.map((item, index) => {
-          console.log(item);
           return (
             <div
               key={index}

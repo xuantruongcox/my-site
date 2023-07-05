@@ -10,7 +10,7 @@ function Categories({ data }) {
   const colorMode = useColorMode()[0];
 
   return (
-    <section sx={{variant: 'section'}} className="categories">
+    <section sx={{ variant: 'section' }} className="categories">
       <Container>
         <div sx={{ variant: "grid" }}>
           <div sx={{ display: "flex" }}>
@@ -28,7 +28,7 @@ function Categories({ data }) {
               </p>
               <img
                 className="categories__subject-divider"
-                sx={{variant: 'divider'}}
+                sx={{ variant: 'divider' }}
                 style={{
                   filter: colorMode === "light" ? "invert(0%)" : "invert(100%)",
                 }}
@@ -39,7 +39,7 @@ function Categories({ data }) {
           </div>
           {data.map((category, index) => {
             return (
-              <div sx={{display: 'flex'}} key={index}>
+              <div sx={{ variant: 'flexGrid' }} key={index}>
                 <Category category={category} />;
               </div>
             );
