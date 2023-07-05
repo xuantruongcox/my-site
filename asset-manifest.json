@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/my-site/static/css/main.cbdba1bd.css",
-    "main.js": "/my-site/static/js/main.b4622961.js",
-    "static/media/roxine-font-icon.svg": "/my-site/static/media/roxine-font-icon.5a089b99723366165fdf.svg",
-    "static/media/roxine-font-icon.eot": "/my-site/static/media/roxine-font-icon.df0ac809927e5e578d07.eot",
-    "static/media/roxine-font-icon.ttf": "/my-site/static/media/roxine-font-icon.22f059661bacb9030d49.ttf",
-    "static/media/roxine-font-icon.woff": "/my-site/static/media/roxine-font-icon.a5c8b310655b38038367.woff",
-    "static/media/icomoon.eot": "/my-site/static/media/icomoon.de4a1ee3be0218683d91.eot",
-    "static/media/icomoon.svg": "/my-site/static/media/icomoon.2c6e488ae47f4d262cab.svg",
-    "static/media/black-divider.png": "/my-site/static/media/black-divider.caa0bb864e9a8417859b.png",
-    "static/media/icomoon.woff": "/my-site/static/media/icomoon.80d411cd6e6c080bf825.woff",
-    "static/media/icomoon.ttf": "/my-site/static/media/icomoon.ef7ce850dd4bd7734a91.ttf",
-    "index.html": "/my-site/index.html",
-    "main.cbdba1bd.css.map": "/my-site/static/css/main.cbdba1bd.css.map",
-    "main.b4622961.js.map": "/my-site/static/js/main.b4622961.js.map"
+    "main.css": "/static/css/main.f773bc1c.css",
+    "main.js": "/static/js/main.a103caea.js",
+    "static/media/marvin-meyer-SYTO3xs06fU-unsplash.jpg": "/static/media/marvin-meyer-SYTO3xs06fU-unsplash.482f33f2615ecba89f77.jpg",
+    "static/media/roxine-font-icon.svg": "/static/media/roxine-font-icon.5a089b99723366165fdf.svg",
+    "static/media/roxine-font-icon.eot": "/static/media/roxine-font-icon.df0ac809927e5e578d07.eot",
+    "static/media/roxine-font-icon.ttf": "/static/media/roxine-font-icon.22f059661bacb9030d49.ttf",
+    "static/media/roxine-font-icon.woff": "/static/media/roxine-font-icon.a5c8b310655b38038367.woff",
+    "static/media/icomoon.eot": "/static/media/icomoon.de4a1ee3be0218683d91.eot",
+    "static/media/icomoon.svg": "/static/media/icomoon.2c6e488ae47f4d262cab.svg",
+    "static/media/black-divider.png": "/static/media/black-divider.caa0bb864e9a8417859b.png",
+    "static/media/icomoon.woff": "/static/media/icomoon.80d411cd6e6c080bf825.woff",
+    "static/media/icomoon.ttf": "/static/media/icomoon.ef7ce850dd4bd7734a91.ttf",
+    "static/media/logo-dark.svg": "/static/media/logo-dark.615c2e70363eab9f22725ebcf3223c19.svg",
+    "static/media/logo.svg": "/static/media/logo.bc77a476f94f4e4f135250522bb685c2.svg",
+    "index.html": "/index.html",
+    "main.f773bc1c.css.map": "/static/css/main.f773bc1c.css.map",
+    "main.a103caea.js.map": "/static/js/main.a103caea.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbdba1bd.css",
-    "static/js/main.b4622961.js"
+    "static/css/main.f773bc1c.css",
+    "static/js/main.a103caea.js"
   ]
 }
