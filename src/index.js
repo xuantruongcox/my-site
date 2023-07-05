@@ -6,7 +6,7 @@ import AboutPage from "./pages/about/index"
 import { ThemeUIProvider } from "theme-ui";
 import roxinePreset from '@coxdev/roxine-preset';
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import isMobile from 'is-mobile';
+// import isMobile from 'is-mobile';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router =createBrowserRouter([
