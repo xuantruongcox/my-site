@@ -86,7 +86,7 @@ function Celebrities() {
         }}
         slidesPerView={6}
         spaceBetween={0}
-        // autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 3000 }}
         a11y={false}
         freeMode={true}
         speed={500}
@@ -95,7 +95,6 @@ function Celebrities() {
         modules={[Autoplay]}
       >
         {dumData.map((item, index) => {
-          console.log(`${__dirname}${item.image}`);
           return (
             <SwiperSlide key={index} className="celebrities__slide">
               <Image

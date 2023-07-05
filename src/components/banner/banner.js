@@ -1,19 +1,24 @@
 /** @jsxImportSource theme-ui */
 
 import "./banner.css";
-
-const Banner = () => {
+import toCapitalize from "../../libs/toCapitalize";
+import Breadcrumb from "../breadcrumb/breadcrumb";
+import background from "../../assets/images/backgrounds/marvin-meyer-SYTO3xs06fU-unsplash.jpg";
+const Banner = ({ data }) => {
+  const { title, content } = data;
   return (
-    <section className="banner">
+    <section
+      style={{
+        backgroundImage: `url(${background})`,
+      }}
+      className="banner"
+    >
       <div className="banner__wrapper">
-        <h2
-          sx={{ color: "text", fontFamily: "heading" }}
-          className="banner__title"
-        >
-          Ideal for your business.
-        </h2>
-        <p className="banner__summary"></p>
-        <div className="banner__group"></div>
+        <h1 className="banner__title">{title && toCapitalize(title)}</h1>
+        {content && <p className="banner__content">{content}</p>}
+        <div className="banner__breadcrumb">
+          <Breadcrumb />
+        </div>
       </div>
     </section>
   );

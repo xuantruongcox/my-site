@@ -51,7 +51,7 @@ function Footer() {
   return (
     <footer sx={{variant: 'footer'}} className="footer">
         <div sx={{variant: 'footer.head'}} className="footer__top">
-          <div className="footer__top-col">
+          <div sx={{variant: 'footer.head.logo'}} className="footer__top-col">
             <Image
               className="footer__top-brand"
               src={logoDark}
@@ -59,7 +59,7 @@ function Footer() {
             />
           </div>
           <div className="footer__top-col">
-            <ul className="footer__top-navs">
+            <ul sx={{variant: 'footer.head.navList'}} className="footer__top-navs">
               {navList.map((item, index) => {
                 return (
                   <li key={index} className="navs__item">
@@ -72,7 +72,7 @@ function Footer() {
             </ul>
           </div>
           <div className="footer__top-col">
-            <ul className="footer__top-socials">
+            <ul sx={{variant: 'footer.head.navList'}} className="footer__top-socials">
               {socialList.map((item, index) => {
                 return (
                   <li key={index} className="socials__item">
@@ -87,7 +87,7 @@ function Footer() {
         </div>
         <div className="footer__bottom">
           <div className="footer__bottom-release">
-            <p className="release__info">
+            <p sx={{variant: 'footer.end.coppy'}} className="release__info">
               Copyright 2023 - Studies site - Multi Purpose Theme by DevCox
             </p>
           </div>

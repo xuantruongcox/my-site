@@ -2,8 +2,8 @@
 import { Link } from "theme-ui";
 // import "./quote.css";
 
-function Quote({ quote, translation }) {
-  const { title, content, link, background } = quote;
+function Quote({ data, translation }) {
+  const { title, content, link, background } = data;
   return (
     <section
       sx={{ variant: "banner" }}

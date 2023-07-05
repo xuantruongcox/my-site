@@ -55,7 +55,6 @@ function Galleries({ data }) {
       </div>
       <div sx={{ variant: "grid" }} className="galleries__galleries-list">
         {data.map((item, index) => {
-          console.log(item);
           return (
             <div
               key={index}
