@@ -72,7 +72,7 @@ function Navbar() {
           <button sx={{ variant: 'navbar.toggler' }} onClick={handleNavbarOpen} className="navbar__toggler">
             <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
-          <Link sx={{ variant: "navbar.logo" }} to="/" className="navbar__brand">
+          <Link sx={{ variant: "navbar.logo" }} to="/my-site" className="navbar__brand">
             <LogoBrand isMobile={isMobile} isScrolled={isScrolled} />
           </Link>
         </div>

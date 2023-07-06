@@ -65,8 +65,8 @@ function Galleries({ data }) {
               className="list__gallery"
             >
               <div className="btn__group">
-                <Link to="/" className="list__gallery-fav icon-heart"></Link>
-                <Link to="/" className="list__gallery-slug icon-link"></Link>
+                <Link to="/my-site" className="list__gallery-fav icon-heart"></Link>
+                <Link to="/my-site" className="list__gallery-slug icon-link"></Link>
               </div>
             </div>
           );
