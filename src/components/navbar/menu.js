@@ -525,7 +525,7 @@ const menu = [
     },
     {
         name: "about",
-        path: "/about",
+        path: "/my-site/about",
         icon: "",
         dropdown: null,
     },

@@ -5,6 +5,7 @@ import Navbar from "../navbar/navbar";
 import Celebrities from '../celebrities/celebrities';
 function Layout({ children, className }) {
   return (
+
     <div
       sx={{ backgroundColor: "background", transition: ".3s ease-in-out" }}
       className="main__layout"
@@ -16,6 +17,8 @@ function Layout({ children, className }) {
       <Celebrities />
       <Footer />
     </div>
+
+
   );
 }
 export default Layout;

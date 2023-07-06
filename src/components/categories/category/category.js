@@ -28,7 +28,7 @@ function Category({ category }) {
         ></i>
         <Link
           sx={{ variant: "card.name" }}
-          to="/"
+          to="/my-site"
           className="category__title-text"
         >
           {category.title}

@@ -61,14 +61,13 @@ const bannerData = {
 }
 const AboutPage = () => {
   return (
-    <Suspense fallback={<div>Loading ...</div>}>
-      <Layout>
-        <Banner data={bannerData} />
-        <Describe data={describeData} />
-        <AlternateList data={alternateData} />
-        <Quote data={quotes[1]}/>
-      </Layout>
-    </Suspense>
+    <>
+
+      <Banner data={bannerData} />
+      <Describe data={describeData} />
+      <AlternateList data={alternateData} />
+      <Quote data={quotes[1]} />
+    </>
   );
 };
 
