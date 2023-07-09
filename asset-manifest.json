@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-site/static/css/main.c09d5703.css",
-    "main.js": "/my-site/static/js/main.2b888c25.js",
+    "main.js": "/my-site/static/js/main.59c6560b.js",
     "static/media/marvin-meyer-SYTO3xs06fU-unsplash.jpg": "/my-site/static/media/marvin-meyer-SYTO3xs06fU-unsplash.482f33f2615ecba89f77.jpg",
     "static/media/roxine-font-icon.svg": "/my-site/static/media/roxine-font-icon.5a089b99723366165fdf.svg",
     "static/media/roxine-font-icon.eot": "/my-site/static/media/roxine-font-icon.df0ac809927e5e578d07.eot",
@@ -16,10 +16,10 @@
     "static/media/logo.svg": "/my-site/static/media/logo.bc77a476f94f4e4f135250522bb685c2.svg",
     "index.html": "/my-site/index.html",
     "main.c09d5703.css.map": "/my-site/static/css/main.c09d5703.css.map",
-    "main.2b888c25.js.map": "/my-site/static/js/main.2b888c25.js.map"
+    "main.59c6560b.js.map": "/my-site/static/js/main.59c6560b.js.map"
   },
   "entrypoints": [
     "static/css/main.c09d5703.css",
-    "static/js/main.2b888c25.js"
+    "static/js/main.59c6560b.js"
   ]
 }
