@@ -1,6 +1,7 @@
 /** @jsxImportSource theme-ui */
 import { Container } from "theme-ui";
-import blackDivider from "../../assets/images/black-divider.png";
+import divider from "../../assets/images/white-divider.png";
+import toUpperCase from "../../libs/toUpperCase";
 // import "./culture.css";
 function Culture({ data }) {
   const { description, bgImage, title, subTitle, content } = data;
@@ -12,13 +13,13 @@ function Culture({ data }) {
     >
       {/* <div className="culture__background"></div> */}
         <div sx={{ variant: "banner" }}>
-          <h3 className="culture__subtitle">{subTitle}</h3>
-          <h2 className="culture__maintitle">{title}</h2>
+          <h3 className="culture__subtitle">{toUpperCase(subTitle)}</h3>
+          <h2 className="culture__maintitle">{toUpperCase(title)}</h2>
           <p className="culture__des">{description}</p>
           <img
             sx={{ variant: "divider" }}
             className="culture__divider"
-            src={blackDivider}
+            src={divider}
             alt=""
           />
           <p className="culture__content">{content}</p>

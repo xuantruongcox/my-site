@@ -1,17 +1,16 @@
-/** @jsxImportSourcce theme-ui */
-import React from "react";
+/** @jsxImportSource theme-ui */
 import toCapitalize from "../../libs/toCapitalize";
-import "./describe.css";
+// import "./describe.css";
 const Describe = ({ data }) => {
   return (
-    <section className="describe">
-      <div className="describe__wrapper">
+    <section sx={{variant: 'section'}} className="describe">
+      <div sx={{variant: 'describe.wrapper'}} className="describe__wrapper">
         <div className="describe__title">
-          <h2 sx={{ color: "text" }} className="describe__title">
+          <h2 sx={{ variant: "describe.title" }} className="describe__title">
             {data.goals.map((goal, index) => {
               if (goal.emphasize) {
                 return (
-                  <span key={index} className="describe__title-emphasize">
+                  <span sx={{variant: 'describe.emphasize'}} key={index} className="describe__title-emphasize">
                     {goal.name && toCapitalize(goal.name)}.{" "}
                   </span>
                 );
@@ -21,7 +20,7 @@ const Describe = ({ data }) => {
             })}
           </h2>
         </div>
-        <p sx={{ color: "text" }} className="describe__content">
+        <p sx={{ variant: "describe.content" }} className="describe__content">
           {data.content}
         </p>
       </div>

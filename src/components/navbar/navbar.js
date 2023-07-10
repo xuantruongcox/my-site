@@ -7,7 +7,7 @@ import { Image, } from "theme-ui";
 import { Link } from 'react-router-dom';
 import useScroll from "../../libs/isScrolled";
 import toUpperCase from "../../libs/toUpperCase";
-// import Dropdown from "../dropdown/dropdown";
+import Dropdown from "../dropdown/dropdown";
 // import MegaMenu from "../mega/mega";
 // import SwitchTheme from "../switch-theme/toggleModeTheme";
 import logoDark from '../../assets/images/logo-dark.svg';
@@ -89,7 +89,7 @@ function Navbar() {
                     <li
                       sx={{
                         variant: 'navbar.menuWrapper.menu.item',
-                        a: {
+                        "> a": {
                           color:
                             (isScrolled && !isMobile) || isMobile
                               ? "#55565b"
@@ -99,12 +99,12 @@ function Navbar() {
                       key={index}
                       className="list__item animate__animated animate__fadeIn"
                     >
-                      {/* <Dropdown
+                      <Dropdown
                           indexItem={index}
                           data={item}
                           activeMenu={activeMenu}
                           handleMenuOpen={handleMenuOpen}
-                        /> */}
+                        />
                     </li>
                   );
                 } else if (item.mega) {
@@ -112,7 +112,7 @@ function Navbar() {
                     <li
                       sx={{
                         variant: 'navbar.menuWrapper.menu.item',
-                        a: {
+                        "> a": {
                           color:
                             (isScrolled && !isMobile) || isMobile
                               ? "#55565b"
@@ -136,7 +136,7 @@ function Navbar() {
                     <li
                       sx={{
                         variant: 'navbar.menuWrapper.menu.item',
-                        a: {
+                        "> a": {
                           color:
                             (isScrolled && !isMobile) || isMobile
                               ? "#55565b"

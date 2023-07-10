@@ -18,8 +18,8 @@ function Categories({ data }) {
               sx={{ marginTop: "auto", marginBottom: "auto", variant: 'header' }}
               className="categories__subject"
             >
-              <h3 className="categories__subject-subtitle">what we do</h3>
-              <h2 className="categories__subject-maintitle">experts</h2>
+              <h3 sx={{textTransform: "uppercase"}} className="categories__subject-subtitle">what we do</h3>
+              <h2 sx={{textTransform: "uppercase"}} className="categories__subject-maintitle">experts</h2>
               <p
                 sx={{ variant: "text.summary" }}
                 className="categories__subject-description"

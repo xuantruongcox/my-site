@@ -8,7 +8,8 @@ const sidebar = {
         transition: '.3s ease-in-out',
         overflowY: "auto",
         zIndex: 999,
-        
+        padding: '0rem 2rem',
+
         closeButton: {
             // textAlign: 'center',
             button: {
@@ -18,21 +19,19 @@ const sidebar = {
                 // alignItems: 'center',
                 lineHeight: 1.5,
                 gap: '1rem',
-                padding: '2rem'
             }
         },
         a: {
             display: 'block',
             fontSize: '1.4rem',
             color: 'primary',
-            padding: '2rem 1rem',
+            padding: '1rem 0rem'
         },
         topBlock: {
             display: 'flex',
             flexDirection: 'column',
             social: {
                 width: 'fit-content',
-                padding: '2rem 1rem',
                 '>a': {
                     color: 'white',
                     display: 'flex',
@@ -64,10 +63,9 @@ const sidebar = {
             gridTemplateColumns: '1fr',
         },
         bottomBlock: {
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr 1fr',
+            display: 'flex',
             gap: '1rem',
-            padding: '2rem 1rem',
+            padding: '1rem 0rem',
              a: {
                 boxShadow: '0 2px 8px rgb(0 0 0 / 13%)',
                 padding: '1.5rem',
@@ -81,9 +79,13 @@ const sidebar = {
         '@media only screen and (min-width: 768px)': {
             width: '50vw'
         },
-        '@media only screen and (min-width: 1440px)': {
-            width: '20vw'
+        '@media only screen and (min-width: 1280px)': {
+            width: '30vw'
         },
+        '@media only screen and (min-width: 1400px)': {
+            width: '25vw'
+
+        }
 
     }
 }
