@@ -13,6 +13,10 @@ const navbar = {
         "> div": {
             marginTop: 'auto',
             marginBottom: 'auto',
+            '@media only screen and (min-width: 1024px)': {
+                marginTop: '0rem',
+                marginBottom: '0rem',
+            }
         },
 
     },
@@ -71,6 +75,12 @@ const navbar = {
             '@media only screen and (min-width: 1024px)': {
                 padding: "2.5rem 2rem"
             }
+        },
+        '@media only screen and (min-width: 1024px)': {
+            height: '100%',
+            '> * > *': {
+                height: '100%'
+            }
         }
     },
     menuWrapper: {
@@ -80,37 +90,61 @@ const navbar = {
         right: '0%',
         bg: "white",
         height: 'fit-content',
-        maxHeight: '0rem',
-        overflow: 'hidden',
+        maxHeight: '0vh',
+        overflowY: 'auto',
         transition: ".4s ease-in-out",
         zIndex: 99,
         menu: {
+            maxHeight: "350px",
             item: {
-                link: {
+                "> a > i": {
+                    '@media only screen and (min-width: 1024px)': {
+                        display: 'none'
+                    }
+                },
+                'a': {
                     color: 'text',
-                    display: 'block',
+                    display: 'flex',
                     padding: '1rem 2rem',
                     fontSize: "1.2rem",
+                    lineHeight: '2',
                     '@media only screen and (min-width: 1024px)': {
                         padding: '2.5rem 2rem',
+                        height: '100%'
+
                     },
                     '@media only screen and (min-width: 2560px)': {
                         padding: '4rem 2rem',
                     }
+                },
+            },
+            "ul": {
+                background: 'rgb(248,248,248)',
+                "ul": {
+                    bg: 'rgb(240,240,240)',
                 }
             },
             '@media only screen and (min-width: 1024px)': {
                 display: 'flex',
                 margin: '0rem',
-
+                height: '100%',
+                "ul": {
+                    background: '#fff',
+                    "ul": {
+                        bg: '#fff',
+                    }
+                },
+                'ul:hover': {
+                    display: 'block'
+                }
             }
         },
 
         '@media only screen and (min-width: 1024px)': {
             position: 'static',
             maxHeight: '100%',
-            bg: 'transparent'
-            
+            bg: 'transparent',
+            height: '100%'
         },
     },
     '@media only screen and (min-width: 1024px)': {

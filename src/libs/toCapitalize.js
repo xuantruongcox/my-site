@@ -1,4 +1,4 @@
-export default function toUpperCase(string = "") {
+export default function toCapitalize(string = "") {
   const splitString = string.split(" ");
  
   splitString.forEach((text,index) => {

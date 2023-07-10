@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-./src/roxine-preset
+roxine-preset
 /node_modules
 /.pnp
 .pnp.js

@@ -25,6 +25,10 @@ import text from './text';
 import flexGrid from "./flexGrid";
 import navbar from "./navbar";
 import sidebar from './sidebar';
+import describe from "./describe";
+import breadcrumb from "./breandcrumb";
+import alternate from "./alternate-list";
+import dropdown from './dropdown';
 
 const fonts = [
   "https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i",
@@ -73,5 +77,9 @@ export default makeTheme({
   footer,
   flexGrid,
   navbar,
-  sidebar
+  sidebar,
+  describe,
+  breadcrumb,
+  alternate,
+  dropdown
 })

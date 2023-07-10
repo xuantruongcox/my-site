@@ -31,7 +31,7 @@ function Galleries({ data }) {
       <div sx={{ variant: "header2" }}>
         <div className="galleries__title">
           <h2
-            sx={{ variant: "text.content" }}
+            sx={{ variant: "text.content", textTransform: 'uppercase' }}
             className="galleries__title-text"
           >
             The work

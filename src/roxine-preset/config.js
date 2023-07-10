@@ -10,7 +10,6 @@ const config = {
             color: 'text',
             "h1,h2,h3,h4,h5,h6": {
                 fontFamily: "heading",
-                textTransform: "uppercase",
             },
             body: {
                 margin: 'auto'
@@ -28,7 +27,6 @@ const config = {
             h3: {
                 fontSize: 5,
                 fontWeight: "slim",
-                textTransform: "uppercase",
                 letterSpacing: ".3rem",
                 margin: "0px",
             },
@@ -55,6 +53,7 @@ const config = {
             },
             a: {
                 textDecoration: "none",
+                cursor: 'pointer'
             },
             ".swiper-slide": {
                 display: "flex",
@@ -94,6 +93,7 @@ const config = {
         accent: "#5645FF", //PurleBlue 1
         highlight: "#000000", //Black 1
         background: "#fff", //White 1
+        emphasize: "#5645FF",
         modes: {
             dark: {
                 text: "white",
@@ -137,6 +137,8 @@ const config = {
         "clamp(1.2rem, 2vw, 1.4rem)",
         "clamp(1.2rem, 2vw, 1.3rem)",
         "clamp(1.2rem, 2vw, 1.6rem)",
+        "clamp(1rem, 3vw, 1.4rem)",
+        " clamp(1.2rem, 3vw, 1.375rem)"
     ],
     fonts: {
         body: "Poppins, Helvetica Neue, Helvetica, Arial, sans-serif",

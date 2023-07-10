@@ -12,8 +12,8 @@ function Team({ data }) {
     <section sx={{ variant: "section" }} className="team">
       <Container>
         <div sx={{variant: 'header3'}} className="team__head">
-          <h3 className="team__head-subtitle">who we are</h3>
-          <h2 className="team__head-title">team work</h2>
+          <h3 sx={{textTransform: 'uppercase'}} className="team__head-subtitle">who we are</h3>
+          <h2 sx={{textTransform: 'uppercase'}} className="team__head-title">team work</h2>
           <p sx={{variant: 'text.summary'}} className="team__head-des">
             {toCapitalize(
               "we really love what we do & our work on every project truly reflects that."

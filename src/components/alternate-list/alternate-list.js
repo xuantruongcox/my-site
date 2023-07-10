@@ -1,22 +1,22 @@
 /** @jsxImportSource theme-ui */
-import "./alternate-list.css";
+// import "./alternate-list.css";
 import { Image } from "theme-ui";
 
 const AlternateItem = ({ item }) => {
   const { title, contents, image } = item;
   return (
-    <li className="alternate__list-item">
-      <div className="item__col">
-        <Image className="item__img" alt={title} src={image} />
+    <li sx={{variant: "alternate.item"}} className="alternate__list-item">
+      <div sx={{variant: "alternate.item.col"}} className="item__col">
+        <Image sx={{variant: "alternate.item.img"}} className="item__img" alt={title} src={image} />
       </div>
-      <div className="item__col">
-        <div className="item__wrapper">
-          <h2 sx={{ color: "text" }} className="item__title">
+      <div sx={{variant: "alternate.item.col"}} className="item__col">
+        <div sx={{variant: "alternate.item.wrapper"}} className="item__wrapper">
+          <h2 sx={{ variant: "alternate.item.title" }} className="item__title">
             {title}
           </h2>
           {contents.map((content, index) => {
-            return (
-              <p sx={{ color: "text" }} key={index} className="item__content">
+          return (
+              <p sx={{ variant: "alternate.item.content" }} key={index} className="item__content">
                 {content}
               </p>
             );
@@ -29,8 +29,8 @@ const AlternateItem = ({ item }) => {
 
 const AlternateList = ({ data }) => {
   return (
-    <section className="alternate">
-      <ul className="alternate__list">
+    <section sx={{variant: "alternate"}} className="alternate">
+      <ul sx={{variant: "alternate.list"}} className="alternate__list">
         {data.map((item, index) => {
           return <AlternateItem id={index} key={index} item={item} />;
         })}

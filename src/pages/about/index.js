@@ -1,5 +1,4 @@
-import React, { Suspense } from "react";
-import Layout from "../../components/layout/layout";
+import React from "react";
 import Banner from "../../components/banner/banner";
 import Describe from "../../components/descripe/describe";
 import AlternateList from "../../components/alternate-list/alternate-list";
@@ -62,7 +61,6 @@ const bannerData = {
 const AboutPage = () => {
   return (
     <>
-
       <Banner data={bannerData} />
       <Describe data={describeData} />
       <AlternateList data={alternateData} />
