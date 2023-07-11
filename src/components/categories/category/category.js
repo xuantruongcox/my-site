@@ -19,26 +19,29 @@ function Category({ category }) {
       }}
       className="category"
     >
-      <div sx={{ variant: "card.head" }} className="category__title">
-        <i
-          sx={{
-            variant: "card.icon",
-          }}
-          className={category.icon + " category__title-icon"}
-        ></i>
-        <Link
-          sx={{ variant: "card.name" }}
-          to="/my-site"
-          className="category__title-text"
-        >
-          {category.title}
-        </Link>
-      </div>
-      `
-      <div className="category__description">
-        <p sx={{ variant: "card.des" }} className="category__description-text">
-          {category.description}
-        </p>
+      <div sx={{ variant: 'card.wrapper' }} className="category__wrapper">
+        <div sx={{ variant: "card.head" }} className="category__title">
+          <i
+            sx={{
+              variant: "card.icon",
+            }}
+            className={category.icon + " category__title-icon"}
+          ></i>
+          <Link
+            sx={{ variant: "card.name" }}
+            to="/my-site"
+            className="category__title-text"
+          >
+            {category.title}
+          </Link>
+        </div>
+        `
+        <div className="category__description">
+          <p sx={{ variant: "card.des" }} className="category__description-text">
+            {category.description}
+          </p>
+        </div>
+
       </div>
       <Link
         sx={{
@@ -50,7 +53,7 @@ function Category({ category }) {
         LEARN MORE
       </Link>
     </div>
-  );
+  )
 }
 
 export default Category;

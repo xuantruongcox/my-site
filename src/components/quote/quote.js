@@ -6,7 +6,7 @@ function Quote({ data, translation }) {
   const { title, content, link, background } = data;
   return (
     <section
-      sx={{ variant: "banner" }}
+      sx={{ variant: "poster" }}
       style={{ backgroundImage: `url('${background}')` }}
       className="quote"
     >

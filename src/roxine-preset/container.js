@@ -1,21 +1,13 @@
 const container = {
-    padding: "10rem 1rem",
-    marginTop: "auto",
-    marginBottom: "auto",
-    "@media screen and (min-width: 768px)": {
-      padding: "10rem 5rem",
+    padding: "6rem 0rem",
+    '@media only screen and (min-width: 768px)': {
+      padding: "8rem 0rem",
     },
-    "@media screen and (min-width:  1024px)": {
-      padding: "10rem 2.2rem",
+    '@media only screen and (min-width: 1024px)': {
+      padding: "10rem 0rem",
     },
-    "@media screen and (min-width:  1440px)": {
-      padding: "10rem 20rem",
-    },
-    "@media screen and (min-width:  1920px)": {
-      padding: "10rem 40rem",
-    },
-    "@media screen and (min-width:  2560px)": {
-      padding: "20rem 70rem",
+    '@media only screen and (min-width: 1440px)': {
+      padding: "15rem 0rem",
     },
   }
   export default container;

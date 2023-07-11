@@ -5,7 +5,6 @@ import Quote from "../../components/quote/quote";
 import Galleries from "../../components/galleries/galleries";
 import Story from "../../components/story/story";
 import Culture from "../../components/culture/culture";
-import Team from "../../components/team/team";
 import Analysis from "../../components/analysis/analysis";
 import Testimonials from '../../components/testimonials/testimonials-slider';
 import caption from "../../components/caption/dum-data";
@@ -14,7 +13,8 @@ import quotation from "../../components/quote/dum-data";
 import galleries from "../../components/galleries/dum-data";
 import story from "../../components/story/dum-data";
 import culture from "../../components/culture/dum-data";
-import team from "../../components/team/dum-data";
+import works from "../../components/work/dum-data";
+import Work from "../../components/work/work";
 
 function HomePage() {
     return (
@@ -25,7 +25,7 @@ function HomePage() {
             <Galleries data={galleries} />
             <Story data={story} />
             <Culture data={culture} />
-            <Team data={team} />
+            <Work data={works} />
             <Analysis />
             <Testimonials />
         </>

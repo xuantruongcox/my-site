@@ -26,7 +26,10 @@ const footer = {
             padding: '0rem 0rem',
             marginBottom: '2rem',
             '@media only screen and (min-width: 768px)': {
-                marginBottom: '0rem'
+                marginBottom: '0rem',
+            },
+            '@media only screen and (min-width: 1024px)': {
+                margin: '0rem'
             }
         },
         '@media only screen and (min-width: 768px)': {

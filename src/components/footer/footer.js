@@ -51,14 +51,14 @@ function Footer() {
   return (
     <footer sx={{variant: 'footer'}} className="footer">
         <div sx={{variant: 'footer.head'}} className="footer__top">
-          <div sx={{variant: 'footer.head.logo'}} className="footer__top-col">
+          <div sx={{variant: 'footer.head.logo', flex: ".45"}} className="footer__top-col">
             <Image
               className="footer__top-brand"
               src={logoDark}
               alt="logo-brand"
             />
           </div>
-          <div className="footer__top-col">
+          <div sx={{flex: ".5"}} className="footer__top-col">
             <ul sx={{variant: 'footer.head.navList'}} className="footer__top-navs">
               {navList.map((item, index) => {
                 return (
@@ -71,7 +71,7 @@ function Footer() {
               })}
             </ul>
           </div>
-          <div className="footer__top-col">
+          <div  sx={{flex: "0"}} className="footer__top-col">
             <ul sx={{variant: 'footer.head.navList'}} className="footer__top-socials">
               {socialList.map((item, index) => {
                 return (

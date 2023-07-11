@@ -26,7 +26,7 @@ function Navbar() {
   const isMobile = useCheckDevice();
 
 
-  const isScrolled = useScroll(".navbar");
+  const isScrolled = useScroll();
   const handleMenuOpen = (index) => {
     setActiveMenu((prevMenu) => (prevMenu === index ? null : index));
   };
@@ -64,7 +64,6 @@ function Navbar() {
     }
   }
 
-  console.log(isMobile)
   return (
     <nav sx={{ variant: 'navbar', bg: (isScrolled || isMobile) ? 'white' : 'transparent' }} className="navbar">
       <div sx={{ variant: 'navbar.wrapper' }} className="navbar__wrapper">
@@ -150,7 +149,7 @@ function Navbar() {
                         sx={{
                           variant: 'navbar.menuWrapper.menu.item.link',
                         }}
-                        to={item.path} className="list__item-link">
+                        to={`${item.path}`} className="list__item-link">
                         {toUpperCase(item.name)}
                       </Link>
                     </li>
