@@ -12,10 +12,10 @@ function Culture({ data }) {
       className="culture"
     >
       {/* <div className="culture__background"></div> */}
-        <div sx={{ variant: "banner" }}>
+        <div sx={{ variant: "poster" }}>
           <h3 className="culture__subtitle">{toUpperCase(subTitle)}</h3>
           <h2 className="culture__maintitle">{toUpperCase(title)}</h2>
-          <p className="culture__des">{description}</p>
+          <p sx={{variant: 'poster.summary'}} className="culture__summary">{description}</p>
           <img
             sx={{ variant: "divider" }}
             className="culture__divider"

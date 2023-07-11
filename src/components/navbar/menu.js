@@ -1,7 +1,7 @@
 const menu = [
     {
         name: "home",
-        path: "/",
+        path: "/my-site",
         icon: "",
         dropdown: [
             {
@@ -38,7 +38,7 @@ const menu = [
     },
     {
         name: "features",
-        path: "/features",
+        path: "/my-site/features",
         icon: "",
         dropdown: [
             {
@@ -198,7 +198,7 @@ const menu = [
     },
     {
         name: "portfolio",
-        path: "/portfolio",
+        path: "/my-site/portfolio",
         icon: "",
         dropdown: [
             {
@@ -298,7 +298,7 @@ const menu = [
     },
     {
         name: "elements",
-        path: "/elements",
+        path: "/my-site/elements",
         icon: "",
         mega: [
             {
@@ -531,13 +531,13 @@ const menu = [
     },
     {
         name: "team",
-        path: "/team",
+        path: "/my-site/team",
         icon: "",
         dropdown: null,
     },
     {
         name: "blog",
-        path: "/blog",
+        path: "/my-site/blog",
         icon: "",
         dropdown: [
             {
@@ -556,7 +556,7 @@ const menu = [
     },
     {
         name: "contact",
-        path: "/contact",
+        path: "/my-site/contact",
         icon: "",
         dropdown: null,
     },

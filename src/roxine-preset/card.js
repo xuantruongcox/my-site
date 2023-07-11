@@ -1,18 +1,15 @@
 const card = {
+    display: 'flex',
+    flexDirection: 'column',
     bg: "secondary",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
     position: "relative",
     padding: "40px 45px",
-    // width: "100%",
-    height: "clamp(150px, calc(25vw + 50px), 55rem)",
+    textAlign: 'center',
+    width: "100%",
+    height: "clamp(150px, calc(25vw + 50px), 30rem)",
     minHeight: "25.5rem",
-    maxHeight: "32rem",
-    maxWidth: "35rem",
     borderRadius: "8px",
     transition: "box-shadow 0.3s ease",
-    transitionDelay: "0.15s",
     overflow: "hidden",
     marginTop: "auto",
     marginBottom: "auto",
@@ -39,6 +36,9 @@ const card = {
         "::before": {
             transform: "translate(0%)",
         },
+    },
+    wrapper: {
+        margin: 'auto'
     },
     head: {
         display: "flex",

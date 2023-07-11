@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const useScroll = (elmName) => {
+const useScroll = (elmName='nav') => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Link } from "theme-ui";
 import useCheckDevice from "../../libs/isMobile";
 import useScroll from "../../libs/isScrolled";
+import * as React from 'react';
 // import "./sidebar.css";
 
 function Sidebar() {
@@ -90,8 +91,8 @@ function Sidebar() {
           visibility: isOpen ? "visible" : "hidden",
         }}
       >
-        <div sx={{variant: 'sidebar.menu.topBlock'}} className="sidebar__top">
-          <div sx={{variant: 'sidebar.menu.closeButton'}} className="sidebar__top-close">
+        <div sx={{ variant: 'sidebar.menu.topBlock' }} className="sidebar__top">
+          <div sx={{ variant: 'sidebar.menu.closeButton' }} className="sidebar__top-close">
             <button
               onClick={handleOpenPanel}
               id="close__btn"
@@ -101,44 +102,44 @@ function Sidebar() {
             </button>
           </div>
           <hr />
-          <div sx={{variant: 'sidebar.menu.topBlock.social'}} className="sidebar__top-social">
-            <a sx={{variant: 'sidebar.menu.topBlock.social.fb'}} href="httpsh://facebook.com" className="facebook">
+          <div sx={{ variant: 'sidebar.menu.topBlock.social' }} className="sidebar__top-social">
+            <a sx={{ variant: 'sidebar.menu.topBlock.social.fb' }} href="httpsh://facebook.com" className="facebook">
               <i className="fab fa-facebook-f"></i>
               <p>LOGIN WITH FACEBOOK</p>
             </a>
-            <a sx={{variant: 'sidebar.menu.topBlock.social.google'}} href="https://google.com" className="google">
+            <a sx={{ variant: 'sidebar.menu.topBlock.social.google' }} href="https://google.com" className="google">
               <i className="fab fa-google-plus-g"></i>
               <p>LOGIN WITH GOOGLE</p>
             </a>
           </div>
         </div>
         <hr />
-        <div sx={{variant: 'sidebar.menu.middleBlock'}} className="sidebar__middle">
+        <div sx={{ variant: 'sidebar.menu.middleBlock' }} className="sidebar__middle">
           {navList.map((item, index) => {
             return (
-              <>
-              <Link
-                style={
-                  isOpen
-                    ? { "--animate-duration": `${(index + 3.5) / 5}s` }
-                    : null
-                }
-                className={
-                  isOpen
-                    ? "sidebar__middle-link animate__animated animate__fadeInRight"
-                    : "sidebar__middle-link"
-                }
-                key={index}
-                href={item.path}
-              >
-                {item.name}
-              </Link>
-              <hr />
-              </>
+              <React.Fragment key={index}>
+                <Link
+                  style={
+                    isOpen
+                      ? { "--animate-duration": `${(index + 3.5) / 5}s` }
+                      : null
+                  }
+                  className={
+                    isOpen
+                      ? "sidebar__middle-link animate__animated animate__fadeInRight"
+                      : "sidebar__middle-link"
+                  }
+                  key={index}
+                  href={item.path}
+                >
+                  {item.name}
+                </Link>
+                <hr />
+              </React.Fragment>
             );
           })}
         </div>
-        <div sx={{variant: 'sidebar.menu.bottomBlock' }} className="sidebar__bottom">
+        <div sx={{ variant: 'sidebar.menu.bottomBlock' }} className="sidebar__bottom">
           {socialList.map((item, index) => {
             return (
               <a key={index} className="sidebar__bottom-link" href={item.path}>

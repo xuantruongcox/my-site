@@ -1,7 +1,5 @@
 const config = {
-    config: {
-        initialColorModeName: "light",
-    },
+
     styles: {
         root: {
             fontSize: "10px",
@@ -71,14 +69,14 @@ const config = {
                 i: {
                     fontSize: '2rem'
                 }
-              
+
             },
             input: {
                 border: "none",
                 ":focus": {
                     outline: 0
                 }
-            }, 
+            },
             hr: {
                 width: '100%',
                 height: '.1rem',
@@ -94,14 +92,9 @@ const config = {
         highlight: "#000000", //Black 1
         background: "#fff", //White 1
         emphasize: "#5645FF",
-        modes: {
-            dark: {
-                text: "white",
-                background: "#000000", //#201f30,
-                secondary: "#000000",
-                link: "white",
-            },
-        },
+        // modes: {
+         
+        // },
     },
     space: [
         ".3rem",
@@ -138,12 +131,21 @@ const config = {
         "clamp(1.2rem, 2vw, 1.3rem)",
         "clamp(1.2rem, 2vw, 1.6rem)",
         "clamp(1rem, 3vw, 1.4rem)",
-        " clamp(1.2rem, 3vw, 1.375rem)"
+        "clamp(1.2rem, 3vw, 1.375rem)",
+        "clamp(3rem, 4vw, 6rem)"
     ],
     fonts: {
         body: "Poppins, Helvetica Neue, Helvetica, Arial, sans-serif",
         heading: "Josefin Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
     },
+    layouts: {
+        container: {
+            lg: {
+                // margin: '10rem 0rem'
+            }
+        }
+    }
+
 };
 
 export default config;

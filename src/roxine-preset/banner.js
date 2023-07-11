@@ -1,41 +1,40 @@
 const banner = {
-    display: "flex",
-    position: "relative",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    height: "fit-content",
-    // marginBottom: '10rem',
-    padding: "10rem 0rem",
-    backgroundRepeat: "no-repeat",
-    backgroundAttachment: "fixed",
-    backgroundPosition: "center",
-    backgroundOrigin: "content-box",
-    backgroundSize: "cover",
-    backgroundPositionY: "3em",
-    overflow: "auto",
-    textAlign: "center",
-    zIndex: 1,
-    "::before": {
-      content: '""',
-      position: "absolute",
-      top: "0px",
-      left: "0px",
-      right: "0px",
-      width: "100%",
-      height: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.6)",
-      zIndex: -1,
-    },
-    "h3, h2, p": {
-      color: "white",
-      lineHeight: 1.5,
-    },
-    p: {
-      fontSize: 8,
-    },
+  position: 'relative',
+  wrapper: {
+    position: 'relative',
+    margin: "0rem 1.5rem",
     '@media only screen and (min-width: 768px)': {
-        padding: '10rem 20rem'
+      margin: "0rem 3rem",
+    },
+    '@media only screen and (min-width: 1024px)': {
+      margin: "0rem 3.5rem",
+    },
+    '@media only screen and (min-width: 1440px)': {
+      margin: "0rem 15rem",
+    },
+    '@media only screen and (min-width: 1600px)': {
+      margin: "0rem 40rem",
     }
-  };
-  export default banner;
+  },
+  content: {
+    color: "white"
+  },
+  title: {
+    fontSize: 11,
+    color: "white",
+    marginBottom: '0rem'
+  },
+  "::before": {
+    content: '""',
+    position: "absolute",
+    top: "0px",
+    left: "0px",
+    right: "0px",
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    // zIndex: -1,
+  },
+  
+};
+export default banner;

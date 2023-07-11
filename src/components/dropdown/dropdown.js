@@ -60,7 +60,7 @@ const Dropdown = ({ indexItem, data, activeMenu, handleMenuOpen }) => {
           style={{
             '--animate-duration': '.3s'
           }}
-          sx={{ variant: 'dropdown.menu', display: isOpen && isMobile ? "block":"none"  }} //Just for test
+          sx={{ variant: 'dropdown.menu', display: isOpen && isMobile ? "block":"none"  }} 
           className="dropdown__menu animate__animated animate__fadeIn"
         >
           {data.dropdown.map((item, index) => {

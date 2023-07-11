@@ -103,7 +103,7 @@ const navbar = {
                     }
                 },
                 'a': {
-                    color: 'text',
+                    color: '#55565B',
                     display: 'flex',
                     padding: '1rem 2rem',
                     fontSize: "1.2rem",
@@ -118,22 +118,10 @@ const navbar = {
                     }
                 },
             },
-            "ul": {
-                background: 'rgb(248,248,248)',
-                "ul": {
-                    bg: 'rgb(240,240,240)',
-                }
-            },
             '@media only screen and (min-width: 1024px)': {
                 display: 'flex',
                 margin: '0rem',
                 height: '100%',
-                "ul": {
-                    background: '#fff',
-                    "ul": {
-                        bg: '#fff',
-                    }
-                },
                 'ul:hover': {
                     display: 'block'
                 }

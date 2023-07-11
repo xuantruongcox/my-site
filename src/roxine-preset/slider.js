@@ -48,5 +48,12 @@ const slider = {
         objectFit: "cover",
         zIndex: -1,
     },
+    '.swiper-button-prev, .swiper-button-next':{
+        display: 'none',
+        color: 'accent',
+        '@media only screen and (min-width: 768px)': {
+            display: 'block'
+        }
+    }
 };
 export default slider;

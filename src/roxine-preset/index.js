@@ -26,10 +26,14 @@ import flexGrid from "./flexGrid";
 import navbar from "./navbar";
 import sidebar from './sidebar';
 import describe from "./describe";
-import breadcrumb from "./breandcrumb";
+import breadcrumb from "./breadcrumb";
 import alternate from "./alternate-list";
 import dropdown from './dropdown';
-
+import member from './member';
+import poster from './poster';
+import categories from './categories';
+import story from './story';
+import work from "./work";
 const fonts = [
   "https://fonts.googleapis.com/css?family=Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i",
   "https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i",
@@ -81,5 +85,10 @@ export default makeTheme({
   describe,
   breadcrumb,
   alternate,
-  dropdown
+  dropdown,
+  member,
+  poster,
+  categories,
+  story,
+  work
 })

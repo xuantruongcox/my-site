@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Image } from "theme-ui";
 import "swiper/swiper.min.css";
 import "swiper/swiper-bundle.min.css";
+import toUpperCase from "../../libs/toUpperCase";
 // import "./slider.css";
 
 function Slider({ data }) {
@@ -33,8 +34,8 @@ function Slider({ data }) {
           return (
             <SwiperSlide key={index}>
               <div className="slider__card-content">
-                <h4 className="content__name">{item.fullName}</h4>
-                <h5 className="content__pos">{item.position}</h5>
+                <h4 className="content__name">{toUpperCase(item.fullName)}</h4>
+                <h5 className="content__pos">{toUpperCase(item.position)}</h5>
               </div>
               <Image
                 alt={item.fullName}

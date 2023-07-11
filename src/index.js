@@ -10,13 +10,12 @@ import 'animate.css'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
 root.render(
-  // <React.StrictMode>
+  <React.StrictMode>
     <Router>
       <ThemeUIProvider theme={roxinePreset}>
         <App />
       </ThemeUIProvider>
     </Router>
-  // </React.StrictMode>
+  </React.StrictMode>
 );

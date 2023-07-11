@@ -18,6 +18,7 @@ const sidebar = {
                 width: '100%',
                 // alignItems: 'center',
                 lineHeight: 1.5,
+                padding: '1rem 2rem',
                 gap: '1rem',
             }
         },

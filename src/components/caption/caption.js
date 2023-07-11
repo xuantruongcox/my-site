@@ -5,17 +5,18 @@ import "./caption.css";
 
 function Caption({ data }) {
 
-    const caption = data[0];
+  const caption = data[0];
 
   return (
     <section
+      sx={{ variant: 'caption' }}
       style={{ backgroundImage: `url(${caption.image})` }}
       className="caption"
     >
-      <Container className="caption__info">
+      <div sx={{variant: 'caption.wrapper'}} className="caption__wrapper">
         <div className="caption__summary animate__animated animate__fadeInLeft">
           <h2
-            sx={{  variant: 'caption.h2' }}
+            sx={{ variant: 'caption.h2' }}
             className="caption__summary-text"
           >
             {caption.summary}
@@ -41,7 +42,7 @@ function Caption({ data }) {
         >
           {caption.link.label}
         </a>
-      </Container>
+      </div>
     </section>
   );
 }

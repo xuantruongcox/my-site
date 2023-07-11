@@ -3,16 +3,18 @@ const describe = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        padding: "0rem 1rem",
-        margin: '5rem 0rem',
+        margin: "0rem 1.5rem",
         '@media only screen and (min-width: 768px)': {
-            padding: "0rem 5rem",
+            margin: "0rem 5rem",
+        },
+        '@media only screen and (min-width: 1024px)': {
+            margin: "0rem 3.5rem",
         },
         '@media only screen and (min-width: 1440px)': {
-            padding: "0rem 30rem",
+            margin: "0rem 17rem",
         },
-        '@media only screen and (min-width: 2560px)': {
-            padding: "0rem 50rem",
+        '@media only screen and (min-width: 1600px)': {
+            margin: "0rem 75rem",
         }
     },
     emphasize: {
